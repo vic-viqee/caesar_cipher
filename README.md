@@ -1,7 +1,9 @@
 Caesar Cipher Encoder/Decoder
 A simple Python program that implements the classic Caesar cipher encryption and decryption algorithm. This program allows users to easily encrypt and decrypt messages using a shift cipher method.
 
+
 📋 Features
+
 Encrypt text: Convert plain text into cipher text using a custom shift value
 
 Decrypt text: Convert cipher text back to plain text using the same shift value
@@ -12,11 +14,16 @@ Case preservation: Maintains original letter case (uppercase/lowercase)
 
 Non-alphabet character handling: Leaves numbers, symbols, and spaces unchanged
 
+
 🔧 Requirements
+
 Python 3.x (no additional packages required)
 
+
 🚀 How to Use
+
 Running the Program
+
 Save the script as caesar_cipher.py
 
 Open a terminal/command prompt
@@ -24,8 +31,11 @@ Open a terminal/command prompt
 Run the program:
 
 bash
+
 python caesar_cipher.py
+
 Program Flow
+
 Start the program: You'll see the welcome message
 
 Enter your text: Type the message you want to encrypt or decrypt
@@ -36,6 +46,7 @@ This is the number of positions each letter will be shifted
 
 The same shift must be used for both encryption and decryption
 
+
 Choose operation:
 
 Type E or ENCRYPT to encrypt your text
@@ -45,28 +56,46 @@ Type D or DECRYPT to decrypt your text
 View results: The program displays both original and processed text
 
 Example Usage
+
 Encryption Example:
 
+
 text
+
 === Caesar Cipher Program ===
+
 Enter the text: Hello World
+
 Enter the shift value (1-25): 13
+
 Do you want to (E)ncrypt or (D)ecrypt? E
 
 Original text: Hello World
+
 Encrypted text: Uryyb Jbeyq
+
 Decryption Example:
 
+
 text
+
 === Caesar Cipher Program ===
+
 Enter the text: Uryyb Jbeyq
+
 Enter the shift value (1-25): 13
+
 Do you want to (E)ncrypt or (D)ecrypt? D
 
+
 Encrypted text: Uryyb Jbeyq
+
 Decrypted text: Hello World
+
 📝 How the Caesar Cipher Works
+
 The Caesar cipher is one of the simplest encryption techniques. It works by shifting each letter in the plaintext by a fixed number of positions down or up the alphabet.
+
 
 Example with shift 3:
 
@@ -92,8 +121,11 @@ Decryption: D(x) = (x - shift) mod 26
 
 Where x is the position of the letter in the alphabet (0-25).
 
+
 ⚠️ Limitations
+
 Shift range: Only supports shift values from 1 to 25
+
 
 Alphabet: Only works with English alphabet characters (A-Z, a-z)
 
@@ -101,7 +133,9 @@ Security: NOT secure for real encryption - easy to crack
 
 Special characters: Non-alphabet characters remain unchanged
 
+
 🛠️ Code Structure
+
 The program consists of several functions:
 
 caesar(): Core encryption/decryption logic
@@ -115,6 +149,7 @@ get_valid_shift(): Validates user input for shift value
 main(): Main program flow and user interaction
 
 🔒 Security Note
+
 This is an educational tool only! The Caesar cipher is extremely weak and should never be used for actual secure communication. It can be easily broken by:
 
 Brute force (only 25 possible keys)
@@ -123,14 +158,9 @@ Frequency analysis
 
 Known plaintext attacks
 
-📚 Learning Resources
-Caesar cipher on Wikipedia
-
-Introduction to Cryptography
-
-Python String Methods Documentation
 
 🤝 Contributing
+
 Feel free to fork this repository and enhance the program! Some ideas for improvements:
 
 Add support for different alphabets
@@ -141,10 +171,13 @@ Add a brute-force decryption option
 
 Create a graphical user interface (GUI)
 
+
 📄 License
+
 This project is open source
 
 ✨ Author
+
 Created as a Python programming exercise to demonstrate:
 
 String manipulation
